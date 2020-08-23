@@ -1,6 +1,6 @@
 # webster
 
-Generate a PDF file from a URL.
+Generate a PDF file from a URL (rendered by WebKit).
 
 ## Example
 
