@@ -78,7 +78,7 @@ struct Webster: ParsableCommand {
     func run() {
                 
         guard let myURL = URL(string: url) else {
-            fatalError("Invalid URL")
+            fatalError("Invalid URL.")
         }
                 
         let webView = WebView()
@@ -92,7 +92,7 @@ struct Webster: ParsableCommand {
         if filename != "" {
             
             guard let target = URL(string: filename) else {
-                fatalError("Invalid filename")
+                fatalError("Invalid filename.")
             }
             
             delegate.target = target
@@ -124,6 +124,10 @@ struct Webster: ParsableCommand {
         
         while working && runloop.run(mode: .default, before: .distantFuture) {
             
+        }
+        
+        if working {
+            fatalError("Run loop exited prematurely.")
         }
         
         print(delegate.target.absoluteString)
