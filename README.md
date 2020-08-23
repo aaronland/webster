@@ -2,6 +2,13 @@
 
 Generate a PDF file from a URL (rendered by WebKit).
 
+## Important
+
+This package has been superseded by the following packages and will no longer be updated:
+
+* https://github.com/aaronland/webster-cli
+* https://github.com/aaronland/swift-webster
+
 ## Example
 
 ```
